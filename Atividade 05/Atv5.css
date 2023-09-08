@@ -1,0 +1,137 @@
+body {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    background-image: scr="logo.png";
+    position: fixed;
+    /*pra nao mover com o mouse*/
+    margin: 0 auto;
+     z-index: 1;
+    width: 746px;
+    height: 50px;
+    display: block;
+    /*pro cabeçalho ficar no fundo, 1 deixa ele na frente*/
+}
+
+.title{
+    z-index: 1;
+    position: fixed;
+    color: #2f2928;
+    font-weight: bold;
+    font-size: 35px;
+    text-align:center;
+    padding: 26px;
+    margin-left: 432px;
+}
+
+
+
+.container {
+    margin: 0 ;
+    position: relative;
+    padding-left: 1cm;
+    float: left;
+    width: 650px;
+    padding-top: 3cm;
+}
+
+.direita {
+	float: right;
+    margin: 0 ;
+    width: 650px;
+    margin-right: 1cm;
+    margin: 76px;
+    margin-top: 113px;
+}
+
+.botton{
+	float: right;
+    margin: 0 ;
+    width: 150px;
+    margin-right: 1cm;
+    margin: 76px;
+    margin-top: 113px; 
+}
+
+aside {
+    background-color: #FFFBE4;
+    border: 1px solid #C9BC8F;
+    padding: 29px;
+    float: right;
+    width: 350px;
+    margin-right: 1cm;
+    margin: 189px;
+    margin-top: -70px;
+    margin-bottom: 103px;
+    }
+
+
+article {
+    background-color: #ffffff92;
+    border: 1px solid #cccccc00;
+    margin-bottom: 20px;
+    padding: 15px;
+    /* espaçamento entre a borda e o título */
+    border-radius: 8%;
+}
+
+
+article img {
+    float: left;
+    margin: 0px 0px 0 0;
+    padding: 2px;
+    /*o quanto afasta da borda*/
+    width: 180px;
+    height: 180px;
+    border-radius: 8%;
+    margin-right: 14px;
+    /*ajusta afastamento daimagem em relacao ao texto*/
+}
+
+
+
+article a {
+    color: #c4170c;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 1.0;
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+
+article b {
+    color: #391e98;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+article p {
+    color: #000000;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.0;
+    /*espaçamento entre linhas*/
+}
+
+a:hover {
+    background-color: #000000;
+    color: #FFF;
+}
+
+.clear {
+    /* para a imagem nao "ficar fora" quando usa o float */
+    clear: both;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+}
