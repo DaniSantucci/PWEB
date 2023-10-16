@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Atividade 11</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        var aluno1 = new Object();
+
+        aluno1.ra = "00001235";
+
+        aluno1.nome = "Daniele Santucci";
+
+        alert("ra=" + aluno1.ra + " nome = " + aluno1.nome);
+
+ 
+
+        // usando {}
+
+        var aluno2 = {};
+
+        aluno2.ra = "1234";
+
+        aluno2["nome"] = "Fernando Pessoa";
+
+        alert("ra=" + aluno2.ra + "nome = " + aluno2.nome);
+
+ 
+
+        // Maneira lateral
+
+        var aluno3 = {
+
+            ra: "1234567",
+
+            nome: "Priscila"
+
+ 
+
+        };
+
+        alert("ra=" + aluno3.ra + "nome = " + aluno3.nome);
+
+ 
+
+        // Usando função construtora
+
+        function Aluno(ra, nome){
+
+        this.ra = ra;
+
+        this.nome = nome;
+
+ 
+
+        this.MostraDados = function()
+
+            {
+
+            return "ra=" + this.ra+ "nome=" + this.nome;
+
+            }
+
+ 
+
+        }
+
+ 
+
+        var aluno4 = new Aluno("123", "Josefina");
+
+        alert(aluno4.MostraDados());
+
+        alert(aluno4.nome);
+
+ 
+
+        var aluno5 = {};
+
+        var nome_propriedade = 'ra';
+
+        aluno5[nome_propriedade] = "12345";
+
+        aluno5['nome'] = "Ingrid";
+
+        alert(aluno5.ra + " " + aluno5.nome);
+
+ 
+
+ 
+
+    </script>
+
+    
+
+</body>
+
+</html>
